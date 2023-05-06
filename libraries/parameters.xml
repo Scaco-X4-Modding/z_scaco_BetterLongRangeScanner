@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Original node for reference
+	For example to change the max range from 2000km to 500km, change:
+		<replace sel="//longrangescan/scan/@range">2000000</replace>
+	To:
+		<replace sel="//longrangescan/scan/@range">500000</replace>
+		
+ <longrangescan>
+    <scan effect="scfx_wave_01" range="200000" speed="25000" coneratio="1">
+      <angle pitch="45" yaw="60" />
+      <chargetime min="2.0" max="2.0" />
+    </scan>
+    <result unidentified="scfx_result_bad_01" target="scfx_result_special_01" maxunidentified="100" maxdistance="20000" scale="0.5" />
+  </longrangescan>  
+-->
+<diff>
+	<replace sel="/parameters/longrangescan/scan/@effect">cpfx_gate_01</replace>
+	<replace sel="//longrangescan/scan/@range">1000000</replace>
+	<replace sel="//longrangescan/scan/@speed">30000</replace>
+	<replace sel="//longrangescan/scan/angle/@pitch">180</replace>
+	<replace sel="//longrangescan/scan/angle/@yaw">360</replace>
+	<replace sel="//longrangescan/scan/chargetime/@min">2.0</replace>
+	<replace sel="//longrangescan/scan/chargetime/@max">2.0</replace>
+	<replace sel="//longrangescan/result/@maxdistance">1000000</replace>
+	<replace sel="//longrangescan/result/@maxunidentified">500</replace>
+</diff>
+
